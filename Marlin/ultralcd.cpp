@@ -1096,6 +1096,8 @@ static void menu_action_setting_edit_bool(const char* pstr, bool* ptr)
 void lcd_init()
 {
     lcd_implementation_init();
+    // Display boot screen for 5s
+    delay(5000);
 
 #ifdef NEWPANEL
     pinMode(BTN_EN1,INPUT);
