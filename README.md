@@ -1,3 +1,16 @@
+=================================
+NADHack Laser cutter build V1.0.0
+=================================
+
+Forked from https://github.com/TurnkeyTyranny/buildlog-lasercutter-marlin
+
+Changes:
+* Configure for RAMPS 1.4 and RepRapDiscount Full Graphic Smart Controller
+* Add NADHack name
+
+
+Original README.md is below
+
 ==========================================
 Turnkey K40 Laser Arduino + Ramps Firmware
 ==========================================
