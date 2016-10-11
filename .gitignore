@@ -4,6 +4,7 @@ applet/
 *.orig
 *.rej
 *.bak
+*.swp
 .idea/compiler.xml
 .idea/copyright/profiles_settings.xml
 .idea/encodings.xml
