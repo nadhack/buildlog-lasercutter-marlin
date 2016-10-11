@@ -200,7 +200,6 @@ void laser_fire(int intensity = 100.0) {
 }
 
 void laser_extinguish(){
-  if (laser.firing == LASER_ON) {
     laser.firing = LASER_OFF;
 
     #if LASER_CONTROL == 1
@@ -251,7 +250,6 @@ void laser_extinguish(){
     if (laser.diagnostics) {
       SERIAL_ECHOLN("Laser extinguished");
     }
-  }
 }
 void laser_set_mode(int mode){
   switch(mode){
