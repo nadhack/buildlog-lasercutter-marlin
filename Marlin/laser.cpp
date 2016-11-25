@@ -156,41 +156,41 @@ void laser_fire(int intensity = 100.0) {
 
     #if LASER_CONTROL == 1
       #if LASER_FIRING_PIN == 2
-        OCR3B = labs((intensity / 100.0)*(F_CPU / LASER_PWM));
-      #endif    
+        OCR3B = labs(((100.0 - intensity) / 100.0)*(F_CPU / LASER_PWM));
+      #endif
       #if LASER_FIRING_PIN == 3
-        OCR3C = labs((intensity / 100.0)*(F_CPU / LASER_PWM));
-      #endif    
+        OCR3C = labs(((100.0 - intensity) / 100.0)*(F_CPU / LASER_PWM));
+      #endif
       #if LASER_FIRING_PIN == 5
-        OCR3A = labs((intensity / 100.0)*(F_CPU / LASER_PWM));
+        OCR3A = labs(((100.0 - intensity) / 100.0)*(F_CPU / LASER_PWM));
       #endif
       #if LASER_FIRING_PIN == 6
-        OCR4A = labs((intensity / 100.0)*(F_CPU / LASER_PWM));
-      #endif    
+        OCR4A = labs(((100.0 - intensity) / 100.0)*(F_CPU / LASER_PWM));
+      #endif
       #if LASER_FIRING_PIN == 7
-        OCR4B = labs((intensity / 100.0)*(F_CPU / LASER_PWM));
-      #endif    
+        OCR4B = labs(((100.0 - intensity) / 100.0)*(F_CPU / LASER_PWM));
+      #endif
       #if LASER_FIRING_PIN == 8
-        OCR4C = labs((intensity / 100.0)*(F_CPU / LASER_PWM));
+        OCR4C = labs(((100.0 - intensity) / 100.0)*(F_CPU / LASER_PWM));
       #endif
     #endif
 
     #if LASER_CONTROL == 2
       #if LASER_INTENSITY_PIN == 2
-        OCR3B = labs((intensity / 100.0)*(F_CPU / LASER_PWM));
-      #endif    
+        OCR3B = labs(((100.0 - intensity) / 100.0)*(F_CPU / LASER_PWM));
+      #endif
       #if LASER_INTENSITY_PIN == 3
-        OCR3C = labs((intensity / 100.0)*(F_CPU / LASER_PWM));
-      #endif    
+        OCR3C = labs(((100.0 - intensity) / 100.0)*(F_CPU / LASER_PWM));
+      #endif
       #if LASER_INTENSITY_PIN == 5
-        OCR3A = labs((intensity / 100.0)*(F_CPU / LASER_PWM));
+        OCR3A = labs(((100.0 - intensity) / 100.0)*(F_CPU / LASER_PWM));
       #endif
       #if LASER_INTENSITY_PIN == 6
-        OCR4A = labs((intensity / 100.0)*(F_CPU / LASER_PWM));
-      #endif    
+        OCR4A = labs(((100.0 - intensity) / 100.0)*(F_CPU / LASER_PWM));
+      #endif
       #if LASER_INTENSITY_PIN == 7
-        OCR4B = labs((intensity / 100.0)*(F_CPU / LASER_PWM));
-      #endif    
+        OCR4B = labs(((100.0 - intensity) / 100.0)*(F_CPU / LASER_PWM));
+      #endif
       #if LASER_INTENSITY_PIN == 8
         OCR4C = labs((intensity / 100.0)*(F_CPU / LASER_PWM));
       #endif
