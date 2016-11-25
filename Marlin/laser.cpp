@@ -96,6 +96,9 @@ void timer4_init(int pin) {
 
 void laser_init()
 {
+  digitalWrite(LASER_FIRING_PIN, HIGH);
+  pinMode(LASER_FIRING_PIN, OUTPUT);
+
   // Initialize timers for laser intensity control
   #if LASER_CONTROL == 1
     if (LASER_FIRING_PIN == 2 || LASER_FIRING_PIN == 3 || LASER_FIRING_PIN == 5) timer3_init(LASER_FIRING_PIN);

@@ -92,6 +92,9 @@ MCU              ?= atmega2560
 else ifeq  ($(HARDWARE_MOTHERBOARD),34)
 HARDWARE_VARIANT ?= arduino
 MCU              ?= atmega2560
+else ifeq  ($(HARDWARE_MOTHERBOARD),35)
+HARDWARE_VARIANT ?= arduino
+MCU              ?= atmega2560
 
 #Duemilanove w/ ATMega328P pin assignment
 else ifeq  ($(HARDWARE_MOTHERBOARD),4)
